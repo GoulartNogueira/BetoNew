@@ -10,28 +10,15 @@ pronome[0] = "todo";
 pronome[0] = "";
 pronome[1] = "qualquer";
 pronome[2] = "nenhum";
-pronome[3] = "algum";
+//pronome[3] = "algum";
 
 var empresa = new Array();
 empresa[0] = "a Google";
 empresa[1] = "a Apple";
 empresa[2] = "a SpaceX";
-
-var pessoa = new Array();
-pessoa[0] = "Bill Gates";
-pessoa[1] = "Elon Musk";
-pessoa[2] = "o CEO d"+get_random(empresa);
-pessoa[3] = "Steve Jobs";
-pessoa[4] = get_random(pronome)+" hacker";
-//pessoa[4] = get_random(pronome)+" especialista em"+get_random(tecnologia);
-
-
-var inicio = new Array();
-inicio[0] = "É fácil ver que";
-inicio[1] = "É evidente que";
-inicio[2] = "Já dizia "+get_random(pessoa)+":";
-//random_inicio = get_random(inicio);
-
+empresa[3] = "o Facebook";
+empresa[4] = "o Alphabet";
+empresa[5] = "o Netflix";
 
 var tecnologia = new Array();
 tecnologia[0] = "iPhone";
@@ -45,6 +32,30 @@ tecnologia[7] = "Cloud Computing"
 tecnologia[7] = "PaaS"
 tecnologia[7] = "SaaS"
 tecnologia[7] = "IaaS"
+
+var pessoa = new Array();
+pessoa[0] = "Bill Gates";
+pessoa[1] = "Elon Musk";
+pessoa[2] = "o CEO d"+get_random(empresa);
+pessoa[3] = "Steve Jobs";
+pessoa[4] = "a comunidade hacker";
+//pessoa[4] = get_random(pronome)+" especialista em"+get_random(tecnologia);
+
+var evento = new Array();
+evento[0] = "no último Summit de Verão";
+evento[1] = "na conferência anual de "+get_random(tecnologia);
+evento[2] = "no workshop sobre "+get_random(tecnologia);
+evento[3] = "nos últimos anos";
+evento[4] = "desde o surgimento de"+get_random(tecnologia);
+
+
+var inicio = new Array();
+inicio[0] = "É fácil ver que";
+inicio[1] = "É evidente que";
+inicio[2] = "Já dizia "+get_random(pessoa)+":";
+inicio[3] = get_random(pessoa)+" insiste em afirmar que";
+inicio[4] = get_random(evento) + ", "+get_random(empresa)+" nega que que";
+//random_inicio = get_random(inicio);
 
 
 var sujeito = new Array();
@@ -65,20 +76,16 @@ acao_empresa[1] = "teve um crescimento tão grande"
 acao_empresa[2] = "estaria fadada ao fracasso"
 acao_empresa[3] = "tem um futuro tão promissor"
 acao_empresa[4] = "quer se tornar a maior empresa em "+get_random(tecnologia)
+acao_empresa[4] = "é pioneira em "+get_random(tecnologia)
 
-var evento = new Array();
-evento[0] = "no último Summit de Verão";
-evento[1] = "na conferência anual de "+get_random(tecnologia);
-evento[2] = "no workshop sobre "+get_random(tecnologia);
-evento[3] = "nos últimos anos";
-evento[4] = "desde o surgimento de"+get_random(tecnologia);
 
 var fim = new Array();
 fim[0] = ", como "+get_random(pessoa)+" reforçou em seu discurso "+ get_random(evento);
 fim[1] = ". Prova disso é que "+ get_random(empresa) + " "+ get_random(acao_empresa);
 fim[2] = ". Por isso "+get_random(empresa)+ " se inspirou muito nos trabalhos de "+ get_random(pessoa)+get_random(evento);
 fim[3] = ". Assim fica evidente que "+get_random(empresa)+ get_random(acao_empresa);
-fim[4] = ". Isso explica porque "+get_random(empresa)+ " "+ get_random(acao_empresa)
+fim[4] = ". Isso fica óbvio se considerarmos que "+get_random(empresa)+ " "+ get_random(acao_empresa)
+fim[5] = ". Isso explica porque "+get_random(empresa)+ " "+ get_random(acao_empresa)
 
 random_fim = fim[Math.floor(fim.length * Math.random())];
 
