@@ -54,8 +54,10 @@ random_sujeito = get_random(sujeito);
 var acao = new Array();
 acao[0] = "depende de "+get_random(tecnologia);
 acao[1] = "deve ser construído usando "+get_random(tecnologia);
-acao[1] = "não pode depender de "+get_random(tecnologia)+ " para continuar rodando";
-acao[2] = "existe hoje graças a "+get_random(tecnologia);
+acao[2] = "não pode depender de "+get_random(tecnologia)+ " para continuar rodando";
+acao[3] = "existe hoje graças a "+get_random(tecnologia);
+acao[4] = "copiou os códigos d"+get_random(empresa);
+acao[5] = "teve os códigos roubados pel"+get_random(empresa);
 
 var acao_empresa = new Array();
 acao_empresa[0] = "começou a especializar em "+get_random(tecnologia)
@@ -72,16 +74,16 @@ evento[3] = "nos últimos anos";
 evento[4] = "desde o surgimento de"+get_random(tecnologia);
 
 var fim = new Array();
-fim[0] = "como "+get_random(pessoa)+" reforçou em seu discurso "+ get_random(evento);
-fim[1] = ". Se não fosse assim, "+ get_random(empresa) + " "+ get_random(acao_empresa);
+fim[0] = ", como "+get_random(pessoa)+" reforçou em seu discurso "+ get_random(evento);
+fim[1] = ". Prova disso é que "+ get_random(empresa) + " "+ get_random(acao_empresa);
 fim[2] = ". Por isso "+get_random(empresa)+ " se inspirou muito nos trabalhos de "+ get_random(pessoa)+get_random(evento);
-fim[3] = ". Assim fica evidente que a "+get_random(empresa)+ get_random(acao_empresa);
+fim[3] = ". Assim fica evidente que "+get_random(empresa)+ get_random(acao_empresa);
 fim[4] = ". Isso explica porque "+get_random(empresa)+ " "+ get_random(acao_empresa)
 
 random_fim = fim[Math.floor(fim.length * Math.random())];
 
 
-var frase = get_random(inicio) +" "+ get_random(pronome)+" "+ get_random(sujeito)+" "+ get_random(acao)+" "+random_fim+"."
+var frase = get_random(inicio) +" "+ get_random(pronome)+" "+ get_random(sujeito)+" "+ get_random(acao)+""+random_fim+"."
 
 document.write("<br /><br /><br /><br /><br /><br /><br /><center><FONT SIZE=72><FONT COLOR='#FFFFFF'>" + 
 frase  + "</FONT></center><br />"); 
