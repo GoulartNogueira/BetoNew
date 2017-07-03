@@ -79,7 +79,7 @@ tecnologia.push("GitHub")
 var pessoa = new Array();
 pessoa.push("Bill Gates");
 pessoa.push("Elon Musk");
-pessoa.push("o CEO d"+get_random(empresa));
+pessoa.push("o chefe de tecnologia d"+get_random(empresa));
 pessoa.push("Steve Jobs");
 pessoa.push("a comunidade hacker");
 pessoa.push("a comunidade responsável por "+get_random(tecnologia));
@@ -103,7 +103,7 @@ evento.push("a aquisição de "+get_random(empresa))
 var inicio = new Array();
 inicio.push("É fácil ver que");
 inicio.push("É evidente que");
-inicio.push("Contrariando a previsão de "+get_random(pessoa)+" (em "+get_random(evento)+"),");
+inicio.push("Contrariando a previsão de "+get_random(pessoa)+" (feita em "+get_random(evento)+"),");
 inicio.push("Já dizia "+get_random(pessoa)+":");
 inicio.push(get_random(pessoa)+" insiste em afirmar que");
 inicio.push("Em "+get_random(evento) + ", "+get_random(empresa)+" nega que que");
@@ -228,9 +228,11 @@ header = fix_string(header)
 document.write("<center><FONT SIZE=5><FONT COLOR='#FFFFFF'><H1>" + header  + "</H1></FONT></center><br />");
 
 for (i=1; i<=6; i++) {
-    document.write("<justify><FONT SIZE=5><FONT COLOR='#FFFFFF'><P>" + fix_string(fix_string(paragrafo()))+ "</FONT><br /></justify>"); 
+    document.write("<FONT SIZE=5><FONT COLOR='#FFFFFF'><p ALIGN=justify>" + fix_string(fix_string(paragrafo()))+ "</FONT><br />"); 
    	}
 var bgcolorlist=new Array("#E5294B","#228B22", "#CD5C5C", "#4B0082" ) 
+
+document.write(" <P><FONT SIZE=5><FONT COLOR='#FFFFFF'>Para saber mais, <a href='https://github.com/GoulartNogueira/lero-lero'>Clique aqui</a> "); 
 
 document.body.style.background=get_random(bgcolorlist)//[Math.floor(Math.random()*bgcolorlist.length)]; 
 
@@ -240,6 +242,7 @@ document.body.style.background=get_random(bgcolorlist)//[Math.floor(Math.random(
     <style type="text/css"> 
 <!-- 
 body,td,th { 
-     color: #000; 
-     font-family: Helvetica, sans-serif; 
+     color: #000;
+     font-family: Helvetica, sans-serif;
+     text-indent: 30px; 
 </html> 
