@@ -6,27 +6,27 @@ function get_random(obj) {
 }
 
 function fix_string(obj) {
-obj = obj.replace(" aa ", " à ")
-obj = obj.replace(" de o ", " do ")
-obj = obj.replace(" de a ", " da ")
-obj = obj.replace(" de os ", " dos ")
-obj = obj.replace(" de as ", " das ")
-obj = obj.replace(" em a ", " na ")
-obj = obj.replace(" em o ", " no ")
-obj = obj.replace(" em os ", " nos ")
-obj = obj.replace(" em as ", " nas ")
-obj = obj.replace("(em a ", "(na ")
-obj = obj.replace("(em o ", "(no ")
-obj = obj.replace("(em os ", "(nos ")
-obj = obj.replace("(em as ", "(nas ")
-obj = obj.replace(" por a ", " pela ")
-obj = obj.replace(" por o ", " pelo ")
-obj = obj.replace(" por os ", " pelos ")
-obj = obj.replace(" por as ", " pelas ")
-obj = obj.replace("Em a ", "Na ")
-obj = obj.replace("Em o ", "No ")
-obj = obj.replace("Em os ", "Nos ")
-obj = obj.replace("Em as ", "Nas ")
+    obj = obj.replace(" aa ", " à ")
+    obj = obj.replace(" de o ", " do ")
+    obj = obj.replace(" de a ", " da ")
+    obj = obj.replace(" de os ", " dos ")
+    obj = obj.replace(" de as ", " das ")
+    obj = obj.replace(" em a ", " na ")
+    obj = obj.replace(" em o ", " no ")
+    obj = obj.replace(" em os ", " nos ")
+    obj = obj.replace(" em as ", " nas ")
+    obj = obj.replace("(em a ", "(na ")
+    obj = obj.replace("(em o ", "(no ")
+    obj = obj.replace("(em os ", "(nos ")
+    obj = obj.replace("(em as ", "(nas ")
+    obj = obj.replace(" por a ", " pela ")
+    obj = obj.replace(" por o ", " pelo ")
+    obj = obj.replace(" por os ", " pelos ")
+    obj = obj.replace(" por as ", " pelas ")
+    obj = obj.replace("Em a ", "Na ")
+    obj = obj.replace("Em o ", "No ")
+    obj = obj.replace("Em os ", "Nos ")
+    obj = obj.replace("Em as ", "Nas ")
     return obj;
 }
 
@@ -55,26 +55,90 @@ empresa[3] = "o Facebook";
 empresa[4] = "o Alphabet";
 empresa[5] = "o Netflix";
 empresa[6] = "o Itaú";
+empresa.push("a Microsoft")
+empresa.push("a Samsung")
+empresa.push("a Motorola")
+empresa.push("a Xiaomi")
+empresa.push("o Uber")
+empresa.push("o MIT")
+empresa.push("a Tesla")
+empresa.push("o Spotify")
+
+var produto = new Array();
+produto.push("iPhone")
+produto.push( "BitCoin")
+produto.push( "Blockchain")
+produto.push( "Watson")
+produto.push( "Netflix")
+produto.push( "Wikipedia")
+produto.push("GitHub")
+produto.push("sua própria plataforma")
+produto.push("plataforma de "+get_random(empresa))
+produto.push("WhatsApp")
+produto.push("ChatBot")
+produto.push("smartphone de "+get_random(empresa))
+produto.push("notebook de "+get_random(empresa))
+produto.push("iPhone")
+produto.push("Android")
+produto.push("Windows")
+produto.push("Linux")
+produto.push("Email")
+produto.push("Backend")
+produto.push("servidor")
+produto.push("Malware")
+produto.push("cache")
+produto.push("router")
+produto.push("firewall")
+produto.push("a máquina virtual")
+produto.push("a base de dados relacional")
+produto.push("SAP")
+produto.push("Deep Web")
+produto.push("MySQL")
+produto.push("APP")
+produto.push("WebAPP")
+produto.push("IDE")
+produto.push("o algorítmo")
+produto.push("Content Manager")
+
 
 var tecnologia = new Array();
-tecnologia.push("iPhone")
-tecnologia.push("Android")
-tecnologia.push("Windows")
-tecnologia.push("Linux")
 tecnologia.push("Machine Learning")
 tecnologia.push("Big Data")
-tecnologia.push("tecnologias ultrapassadas")
+//tecnologia.push("tecnologias ultrapassadas")
 tecnologia.push("Cloud Computing")
 tecnologia.push("PaaS")
 tecnologia.push("SaaS")
 tecnologia.push( "IaaS")
 tecnologia.push( "Deep Learning")
-tecnologia.push( "BitCoin")
-tecnologia.push( "BlockChain")
-tecnologia.push( "Watson da IBM")
-tecnologia.push( "Netflix")
-tecnologia.push( "Wikipedia")
-tecnologia.push("GitHub")
+tecnologia.push( "API")
+tecnologia.push( "NFC")
+tecnologia.push( "4G")
+tecnologia.push( "microserviço")
+tecnologia.push( "Data Mining")
+tecnologia.push( "Programação Orientada a Testes")
+tecnologia.push( "Framework de "+get_random(empresa))
+tecnologia.push( "arquitetura inspirada em "+get_random(produto))
+tecnologia.push( "arquitetura baseada em eventos ")
+
+
+var adjetivo = new Array();
+adjetivo.push("multicanal")
+adjetivo.push("automátizável")
+adjetivo.push("industrial")
+adjetivo.push("escalável")
+adjetivo.push("inovador")
+adjetivo.push("beta")
+adjetivo.push("com robustez")
+adjetivo.push("com crescimento orgânico")
+adjetivo.push("vetorizável")
+adjetivo.push("responsivo")
+adjetivo.push("cognitivo")
+adjetivo.push("viral")
+adjetivo.push("inteligente")
+adjetivo.push("sustentável")
+adjetivo.push("cloudable")
+adjetivo.push("de forma disruptiva")
+
 
 var pessoa = new Array();
 pessoa.push("Bill Gates");
@@ -82,26 +146,29 @@ pessoa.push("Elon Musk");
 pessoa.push("o chefe de tecnologia d"+get_random(empresa));
 pessoa.push("Steve Jobs");
 pessoa.push("a comunidade hacker");
-pessoa.push("a comunidade responsável por "+get_random(tecnologia));
-pessoa.push(get_random(letras)+"."+get_random(letras)+" (especialista em "+get_random(tecnologia)+")");
+pessoa.push("a comunidade responsável por "+get_random(tecnologia.concat(produto)));
+pessoa.push(get_random(letras)+"."+get_random(letras)+" (especialista em "+get_random(tecnologia.concat(produto))+")");
 pessoa.push("o Anonymous");
 pessoa.push("grupo de empreendedores");
 pessoa.push("todo mundo");
+//pessoa.push("brasileiro");
 pessoa.push("qualquer profissional da área");
 //pessoa[4] = get_random(pronome)+" especialista em "+get_random(tecnologia);
 
 var evento = new Array();
-evento[0] = "o último Summit de Verão";
-evento[1] = "a conferência anual de "+get_random(tecnologia);
-evento[2] = "o workshop sobre "+get_random(tecnologia);
-evento[3] = "os últimos anos";
-evento[4] = "o surgimento de "+get_random(tecnologia);
-evento[4] = "a inauguração de "+get_random(empresa);
+evento.push("o último Summit de Verão");
+evento.push("a conferência anual de "+get_random(tecnologia.concat(produto)));
+evento.push("o workshop sobre "+get_random(tecnologia));
+evento.push("os últimos anos");
+evento.push("o surgimento de "+get_random(produto));
+evento.push("a inauguração de "+get_random(empresa));
 evento.push("a aquisição de "+get_random(empresa))
+evento.push("o webinar de "+get_random(produto))
 
 
 var inicio = new Array();
 inicio.push("É fácil ver que");
+inicio.push("Em resposta a "+get_random(empresa));
 inicio.push("É evidente que");
 inicio.push("Contrariando a previsão de "+get_random(pessoa)+" (feita em "+get_random(evento)+"),");
 inicio.push("Já dizia "+get_random(pessoa)+":");
@@ -114,23 +181,30 @@ inicio.push("Contrariando as previsões de "+get_random(pessoa)+" (feitas após 
 //random_inicio = get_random(inicio);
 
 var header_inicio = new Array();
-header_inicio.push("");
 header_inicio.push("Descubra porque");
-header_inicio.push("Contrariando o discurso de "+get_random(pessoa));
+header_inicio.push("Contrariando o discurso de "+get_random(pessoa)+",");
 header_inicio.push(get_random(pessoa)+" afirma: ");
 header_inicio.push("Tudo indica que ");
+header_inicio.push("");
 
 
 var acao = new Array();
 acao.push("depende de "+get_random(tecnologia));
-acao.push("é incompatível "+get_random(tecnologia));
+acao.push("é incompatível com "+get_random(tecnologia));
 acao.push("nunca usará "+get_random(tecnologia));
 acao.push("deve ser construído usando "+get_random(tecnologia));
+acao.push("deve ser compatível com "+get_random(tecnologia));
 acao.push("só existe hoje graças a "+get_random(tecnologia));
-acao.push("teve os códigos roubados pel"+get_random(empresa));
+acao.push("teve os códigos roubados por "+get_random(empresa));
 acao.push("cresceu mais de "+Math.floor(100 * Math.random())+"% desde "+get_random(evento));
-acao.push("vai lançar sua própria versão de "+get_random(tecnologia));
-acao.push("usa "+get_random(tecnologia));
+acao.push("vai lançar versão "+get_random(adjetivo)+" de "+get_random(tecnologia));
+acao.push("se parece com "+get_random(produto)+" "+get_random(adjetivo))//+", mas construído com "+get_random(tecnologia));
+acao.push("tem crescido em "+get_random(local));
+acao.push("lança novidades durante "+get_random(evento));
+acao.push("ganhou novas funcionalidades em "+get_random(evento));
+acao.push("é construído usando "+get_random(tecnologia));
+acao.push("vai crescer em "+get_random(local)+" a partir de "+get_random(evento))
+//acao.push("é diferente de "+get_random(produto)+" pois "+get_random(acao));
 
 var acao_header = new Array();
 acao_header.push("é banido de "+get_random(local));
@@ -140,40 +214,51 @@ acao_header.push("copia os códigos d"+get_random(empresa));
 acao_header.push("tem os códigos roubados pel"+get_random(empresa));
 acao_header.push("cresce mais de "+Math.floor(100 * Math.random())+"% desde "+get_random(evento));
 acao_header.push("faz promessas em "+get_random(local))
-acao_header.push( "começa a se especializar em "+get_random(tecnologia))
+acao_header.push( "começa a se especializar em "+get_random(tecnologia)+" "+get_random(adjetivo))
 acao_header.push( "cresceu demais e agora não se sustenta")
 acao_header.push( "está fadada ao fracasso")
 acao_header.push( "perde servidores em desastre")
 acao_header.push( "fica indisponível por 7 horas")
 acao_header.push( "tem um futuro muito promissor")
-acao_header.push( "quer se tornar a maior empresa em "+get_random(tecnologia)+" de "+get_random(local))
-acao_header.push( "se torna a primeira empresa em "+get_random(local)+" a adquirir "+get_random(tecnologia))
-acao_header.push( "é o maior consumidor de "+get_random(tecnologia)+" d"+get_random(local))
+acao_header.push( "quer se tornar o maior produtor de "+get_random(produto)+" "+get_random(adjetivo)+" de "+get_random(local))
+acao_header.push( "se torna a primeira empresa a produzir "+get_random(produto)+" "+get_random(adjetivo)+" em "+get_random(local))
+acao_header.push( "proíbe "+get_random(produto)+" em "+get_random(local))
+acao_header.push( "é o maior consumidor de "+get_random(produto)+" "+get_random(adjetivo)+" d"+get_random(local))
 acao_header.push( "deve se fundir a"+get_random(empresa))
 acao_header.push( "é o maior cliente de "+get_random(empresa))
 acao_header.push("já caiu mais de "+Math.floor(80 * Math.random())+"% e continua em declínio")
 acao_header.push("ultrapassa "+get_random(empresa)+" em vendas")
-acao_header.push("vai lançar sua própria versão de "+get_random(tecnologia));
-acao_header.push("se fundiu com "+get_random(tecnologia));
-acao_header.push("copiou os códigos de "+get_random(empresa));
+acao_header.push("vai lançar sua própria versão de "+get_random(tecnologia.concat(produto))+" "+get_random(adjetivo));
+acao_header.push("lança "+get_random(tecnologia)+" especialmente para "+get_random(produto));
+acao_header.push("está usando "+get_random(tecnologia));
+acao_header.push("copiou os códigos de "+get_random(produto));
+acao_header.push("disputa com "+get_random(empresa)+" para dominar "+get_random(tecnologia));
+acao_header.push("cria sua versão de "+get_random(produto)+" com ajuda de "+get_random(empresa));
+acao_header.push("fabrica "+get_random(produto)+" "+get_random(adjetivo)+" usando "+get_random(tecnologia));
+acao_header.push("inventa "+get_random(produto)+" "+get_random(adjetivo));
+acao_header.push("cria versão melhorada de "+get_random(produto));
 
 var acao_empresa = new Array();
-acao_empresa[0] = "começou a se especializar em "+get_random(tecnologia)
-acao_empresa[1] = "cresceu muito (talvez demais)"
-acao_empresa[2] = "estaria fadada ao fracasso"
-acao_empresa[3] = "tem um futuro muito promissor"
-acao_empresa[4] = "quer se tornar a maior empresa em "+get_random(tecnologia)+" d"+get_random(local)
-acao_empresa[5] = "é pioneira em "+get_random(tecnologia)
-acao_empresa.push( "se torna a primeira empresa em "+get_random(local)+" a adquirir "+get_random(tecnologia))
-acao_empresa[6] = "é o maior consumidor de "+get_random(tecnologia)+" d"+get_random(local)
-acao_empresa[7] = "deve se fundir a"+get_random(empresa)
-acao_empresa[8] = "é o maior cliente de "+get_random(empresa)
+acao_empresa.push("não revela como faz "+get_random(tecnologia)+" "+get_random(adjetivo))
+acao_empresa.push("começou a se especializar em "+get_random(tecnologia)+" "+get_random(adjetivo))
+acao_empresa.push("cresceu muito (talvez demais)")
+acao_empresa.push("estaria fadada ao fracasso")
+acao_empresa.push("tem um futuro muito promissor")
+acao_empresa.push("quer se tornar a maior empresa em "+get_random(tecnologia)+" d"+get_random(local))
+acao_empresa.push("é pioneira em "+get_random(tecnologia)+" "+get_random(adjetivo))
+acao_empresa.push("é o maior consumidor de "+get_random(tecnologia)+" d"+get_random(local))
+acao_empresa.push("deve se fundir a"+get_random(empresa))
+acao_empresa.push("é o maior cliente de "+get_random(empresa))
 acao_empresa.push("já caiu mais de "+Math.floor(80 * Math.random())+"% e continua em declínio")
 acao_empresa.push("ultrapassa "+get_random(empresa)+" em vendas")
-acao_empresa.push("vai lançar sua própria versão de "+get_random(tecnologia));
-acao_empresa.push("se fundiu com "+get_random(tecnologia));
+acao_empresa.push("vai lançar sua própria versão de "+get_random(tecnologia)+" "+get_random(adjetivo));
+acao_empresa.push("está se disfarçando de "+get_random(tecnologia)+" "+get_random(adjetivo));
 acao_empresa.push("copiou os códigos de "+get_random(empresa));
-
+acao_empresa.push("será liderado por "+get_random(pessoa));
+acao_empresa.push("disputa com "+get_random(empresa)+" para dominar "+get_random(tecnologia));
+acao_empresa.push( "se torna a primeira empresa em "+get_random(local)+" a adquirir "+get_random(tecnologia))
+acao_empresa.push( "já usa "+get_random(tecnologia)+", mas agora pretende expandir para "+get_random(local)+" a partir de "+get_random(evento))
+acao.push("pretende expandir "+get_random(tecnologia)+" para "+get_random(local)+" a partir de "+get_random(evento))
 
 var fim = new Array();
 fim[0] = ", como "+get_random(pessoa)+" reforçou em seu discurso em "+ get_random(evento);
@@ -187,62 +272,79 @@ fim[6] = ". Mas se você prestar bastante atenção, vai perceber que nada disso
 fim.push(", mas "+get_random(pessoa)+" não gosta nem um pouco disso")
 fim.push(" e "+get_random(pessoa)+" assina embaixo")
 fim.push(". Mas isso levanta suspeitas de "+get_random(pessoa))
+fim.push(" - como revela "+get_random(pessoa)+" em discurso polêmico")
 
 var conexao = new Array();
-conexao.push("Por outro lado,")
-conexao.push("Da mesma forma,")
-conexao.push("O que ninguém esperava é que,")
-conexao.push("É fácil ver que");
-conexao.push("Especialistas acreditam que");
-conexao.push("Contrariando a previsão de "+get_random(pessoa)+" (durante "+get_random(evento)+"),");
-conexao.push("Já ",get_random(pessoa)+" defende que");
-conexao.push("Mas");
-conexao.push("Uma vez que");
-conexao.push("Mas não é só "+get_random(empresa)+" que "+get_random(acao_empresa)+",");
-conexao.push("É inegável que");
-conexao.push("Enquanto isso, em "+get_random(local)+", ");
-conexao.push("É de senso comum em "+get_random(local));
-conexao.push("Além disso,");
-conexao.push("Isso explica porque");
-conexao.push("Lembrando que");
-conexao.push("Atenção ao fato que");
-conexao.push("Como reflexo disso,");
-conexao.push("Em resposta a isso,");
-conexao.push("Por sua vez,");
-conexao.push("Portanto,");
-conexao.push("Sendo assim,");
+conexao.push(" - por outro lado,")
+conexao.push("; da mesma forma,")
+conexao.push(". Mas por essa ninguém esperava:")
+conexao.push(". É fácil ver que");
+conexao.push(". Especialistas acreditam que");
+conexao.push(", contrariando a previsão de "+get_random(pessoa)+" (durante "+get_random(evento)+"),");
+conexao.push(", já ",get_random(pessoa)+" defende que");
+conexao.push(" mas");
+conexao.push("... Já");
+conexao.push(" uma vez que");
+conexao.push(", mas não é só "+get_random(empresa)+" que "+get_random(acao_empresa)+",");
+conexao.push(". É inegável que");
+conexao.push(". Enquanto isso, em "+get_random(local)+", ");
+conexao.push(", é de senso comum em "+get_random(local));
+conexao.push(", além disso");
+conexao.push(", isso explica porque");
+conexao.push(", lembrando que");
+conexao.push(", atenção ao fato que");
+conexao.push(". Como reflexo disso,");
+conexao.push(" e o efeito prático disso é que");
+conexao.push(". Em resposta a isso,");
+conexao.push(". Por sua vez");
+conexao.push(", portanto");
+conexao.push(", sendo assim");
+conexao.push(", enquanto");
+conexao.push(" e deve continuar assim pois");
+conexao.push(", da mesma forma,");
 
 
+empresa.push("o mercado de "+get_random(produto))
+
+
+function capitalizeFirstLetter(frase) {
+    return frase.charAt(0).toUpperCase() + frase.slice(1);
+}
 
 function paragrafo() {
-	return get_random(inicio)+" "+get_random(empresa)+" "+ get_random(acao_empresa)+". "+ get_random(conexao)+" "+get_random(tecnologia)+" "+ get_random(acao)+" "+get_random(fim)+". "+get_random(conexao)+" "+get_random(empresa)+" "+ get_random(acao_empresa)+". "+get_random(conexao)+" "+get_random(tecnologia)+" "+get_random(acao)+" "+get_random(fim)+".";
+    return get_random(inicio)+" "+get_random(empresa)+" "+ get_random(acao_empresa)+ get_random(conexao)+" "+get_random(tecnologia)+" "+ get_random(acao)+get_random(fim)+get_random(conexao)+" "+get_random(empresa)+" "+ get_random(acao_empresa)+get_random(conexao)+" "+get_random(tecnologia)+" "+get_random(acao)+get_random(fim)+".";
 }
 
 function frase() {
-    return get_random(tecnologia)+" "+ get_random(acao)+" "+get_random(fim)+".";
+    return get_random(produto)+" "+ get_random(acao)+" "+get_random(fim)+".";
 }
 
 var header = get_random(empresa).substring(2)+" "+ get_random(acao_header)+"."
-header = fix_string(header)
+header = capitalizeFirstLetter(fix_string(header))
+var sub_header = capitalizeFirstLetter(fix_string(get_random(header_inicio)+" "+get_random(tecnologia)+" "+get_random(acao) ))
 
-document.write("<center><FONT SIZE=5><FONT COLOR='#FFFFFF'><H1>" + header  + "</H1></FONT></center><br />");
+document.write("<head><title>Beto News</title></head>")
+document.write("<center><H1>" + header  + "</H1></FONT></center>");
+document.write("<center><H3>" + capitalizeFirstLetter(sub_header) + "</H1></FONT>");
+document.write("<p ALIGN=CENTER><a href='javascript:window.location.reload();'><--Notícia Anterior</a>\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0<a href='javascript:window.location.reload();'>Próxima Notícia --></a></FONT><br><br />"); 
 
-for (i=1; i<=6; i++) {
-    document.write("<FONT SIZE=5><FONT COLOR='#FFFFFF'><p ALIGN=justify>" + fix_string(fix_string(paragrafo()))+ "</FONT><br />"); 
+for (i=1; i<=5; i++) {
+    document.write("<p ALIGN=justify>" + capitalizeFirstLetter(fix_string(fix_string(paragrafo())))+ "</FONT><br />"); 
    	}
 var bgcolorlist=new Array("#E5294B","#228B22", "#CD5C5C", "#4B0082" ) 
 
-document.write(" <P><FONT SIZE=5><FONT COLOR='#FFFFFF'>Para saber mais, <a href='https://github.com/GoulartNogueira/lero-lero'>Clique aqui</a> "); 
+document.write(" <P ALIGN=CENTER><a href='https://github.com/GoulartNogueira/lero-lero'>Leia Mais</a> "); 
 
-document.body.style.background=get_random(bgcolorlist)//[Math.floor(Math.random()*bgcolorlist.length)]; 
-
+//document.body.style.background=get_random(bgcolorlist)//[Math.floor(Math.random()*bgcolorlist.length)]; 
+document.body.style.background="#FCFCFC"
 </script><br> <br> 
     <br> 
     <br> 
     <style type="text/css"> 
 <!-- 
 body,td,th { 
-     color: #000;
-     font-family: Helvetica, sans-serif;
-     text-indent: 30px; 
+     color: #333;
+     font-family: opensans,sans-serif;
+     text-indent: 30px;
+     margin: 4%;
 </html> 
