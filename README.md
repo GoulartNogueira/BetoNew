@@ -1,6 +1,4 @@
 # lero-lero
-Gerador de Lero-Lero, random text generator
+Gerador de Notícias Sensacionalistas, cheias de Buzzwords do mundo de tecnologia.
 
-Veja o resultado em: https://cdn.rawgit.com/GoulartNogueira/lero-lero/9b332d0d/lero-lero.html
-
-Versões Antigas:  https://cdn.rawgit.com/GoulartNogueira/lero-lero/2edf6c07/lero-lero.html
+![alt text](Screenshot.png "Exemplo de notícia gerada automaticamente")
