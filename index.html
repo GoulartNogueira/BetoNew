@@ -322,19 +322,19 @@ function frase() {
     return get_random(produto)+" "+ get_random(acao)+" "+get_random(fim)+".";
 }
 
-var header = get_random(empresa).substring(2)+" "+ get_random(acao_header)+"."
-header = capitalizeFirstLetter(fix_string(header))
-var sub_header = capitalizeFirstLetter(fix_string(get_random(header_inicio)+" "+get_random(tecnologia)+" "+get_random(acao) ))
+var header = get_random(empresa).substring(2)+" "+ get_random(acao_header)+".";
+header = capitalizeFirstLetter(fix_string(header));
+var sub_header = capitalizeFirstLetter(fix_string(get_random(header_inicio)+" "+get_random(tecnologia)+" "+get_random(acao) ));
 
-var head_complete = "<head><title>Beto News - A cada clique uma notícia nova!</title></head>"
-document.write(head_complete)
-//document.write("<head><title>Beto News: " + header + "</title></head>")
-document.write('<meta property="og:title" content="Rich Link Preview" />')
-document.write('<meta property="og:description" content='+sub_header+' />')
+var head_complete = "<head><title>Beto News - A cada clique uma notícia nova!</title></head>";
+document.write(head_complete);
+//document.write("<head><title>Beto News: " + header + "</title></head>");
+document.write('<meta property="og:title" content="Rich Link Preview" />');
+document.write('<meta property="og:description" content='+sub_header+' />');
     
 document.write("<center><H1>" + header  + "</H1></FONT></center>");
 document.write("<center><H3>" + capitalizeFirstLetter(sub_header) + "</H1></FONT>");
-document.write("<p ALIGN=CENTER><a href='javascript:window.location.reload();'><--Notícia Anterior</a>\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0<a href='javascript:window.location.reload();'>Próxima Notícia --></a></FONT><br><br />"); 
+document.write("<p ALIGN=CENTER><a href='javascript:window.location.reload();'><--Notícia Anterior</a>\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0<a href='javascript:window.location.reload();'>Próxima Notícia --></a></FONT><br><br />");
 
 for (i=1; i<=5; i++) {
     document.write("<p ALIGN=justify>" + capitalizeFirstLetter(fix_string(fix_string(paragrafo())))+ "</FONT><br />"); 
