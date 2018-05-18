@@ -326,6 +326,8 @@ var sub_header = capitalizeFirstLetter(fix_string(get_random(header_inicio)+" "+
 var head_complete = "<head><title>Beto News - A cada clique uma notícia nova!</title></head>"
 document.write(head_complete)
 //document.write("<head><title>Beto News: " + header + "</title></head>")
+document.write('<meta property="og:title" content="Rich Link Preview" />')
+document.write('<meta property="og:description" content='+sub_header+' />')
     
 document.write("<center><H1>" + header  + "</H1></FONT></center>");
 document.write("<center><H3>" + capitalizeFirstLetter(sub_header) + "</H1></FONT>");
